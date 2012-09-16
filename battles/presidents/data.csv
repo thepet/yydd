@@ -1,0 +1,44 @@
+playerName,phpClassName,party,level,bmi,thac0,ac,charisma,dexterity,wisdom,intelligence,strength,constitution,warcries
+George Washington,Washington,Federalist,1,25.5,19,10,10,9,10,10,10,10,"""Sorry! Thought you were a cherry tree!"""
+John Adams,Adams,Federalist,1,26,19,10,9,9,10,10,10,10,"""Liberty cannot be preserved without general knowledge among the people that I stabbed your pansy ass"""
+Thomas Jefferson,Jefferson,Democratic-Republican,1,22,19,10,12,12,10,10,10,10,
+James Madison,Madison,Democratic-Republican,1,17,19,10,11,13,10,10,10,8,
+James Monroe,Monroe,Democratic-Republican,1,25.6,19,10,10,9,10,10,10,10,
+John Quincy Adams,Adams2,Democratic-Republican,1,27.2,19,10,10,9,10,10,10,10,
+Andrew Jackson,Jackson,Democrat,1,19,19,10,12,13,10,10,12,11,
+Martin van Buren,Buren,Democrat,1,26,19,10,10,9,10,10,10,10,"""My mutton chops bring all the boys to the yard"""
+William H. Harrison,Harrison,Whig,1,21.2,19,10,12,12,10,10,10,10,
+John Tyler,Tyler,Whig,1,22,19,10,12,12,10,10,10,10,
+James K. Polk,Polk,Democrat,1,26.4,19,10,10,9,10,10,10,10,"""I will stab the next one of you that makes a 'Polk-a' joke."""
+Zachary Taylor,Taylor,Whig,1,30.2,19,10,9,8,10,10,10,10,
+Millard Fillmore,Fillmore,Whig,1,24.2,19,10,11,11,10,10,10,10,
+Franklin Pierce,Pierce,Democrat,1,20.6,19,10,12,12,10,10,10,10,
+James Buchanan,Buchanan,Democrat,1,26.9,19,10,9,9,10,10,10,10,
+Abraham Lincoln,Lincoln,Republican,1,21.7,19,10,12,12,10,10,10,10,
+Andrew Johnson,Johnson,National Union,1,24.9,19,10,11,11,10,10,10,10,
+Ulysses S. Grant,Grant,Republican,1,23.3,19,10,11,11,10,10,10,10,"""You have disturbed my drunkeness.  Now we have fisticuffs sir!"""
+Rutherford Hayes,Hayes,Republican,1,26,19,10,9,9,10,10,10,10,
+James Garfield,Garfield,Republican,1,24.9,19,10,10,11,10,10,10,10,
+Chester Arthur,Arthur,Republican,1,28.7,19,10,9,9,10,10,10,10,"""People only remember me because of Die Hard 3!"""
+Grover Cleveland,Cleveland,Democrat,1,34.6,19,10,8,8,10,10,10,10,
+Benjamin Harrison,Harrison2,Republican,1,25,19,10,9,10,10,10,10,10,
+William McKinley,McKinley,Republican,1,31.1,19,10,8,8,10,10,10,10,
+Theodore Roosevelt,Roosevelt,Republican,1,30.2,19,10,8,8,10,10,12,12,"""BULLY!"""
+William Taft,Taft,Republican,1,42.3,19,10,8,7,10,10,10,10,"""I'm Faaaaaaaaaaaat!!!"""
+Woodrow Wilson,Wilson,Democrat,1,23.5,19,10,11,11,10,10,10,10,
+Warren Harding,Harding,Republican,1,23.5,19,10,11,11,10,10,10,10,
+Calvin Coolidge,Coolidge,Republican,1,21.2,19,10,12,12,10,10,10,10,
+Herbert C. Hoover,Hoover,Republican,1,27.7,19,10,9,9,10,10,10,10,"""Watch out, or I'll throw Turnips at you!"""
+Franklin Delano Roosevelt,Rossevelt,Democrat,1,23.6,19,10,11,11,10,10,10,10,"""Bitch please, I said 'Fuck You' to Hitler"""
+Harry S Truman,Truman,Democrat,1,26.3,19,10,9,9,10,10,10,10,
+Dwight David Eisenhower,Eisenhower,Republican,1,25.3,19,10,10,9,10,10,10,10,"""Do you like Ike?  Well, do you?  DO YOU?!?!?"""
+John Fitzgerald Kennedy,Kennedy,Democrat,1,22.6,19,10,12,12,10,10,10,10,"""Shoot for the moon!"""
+Lyndon B. Johnson,Johnson2,Democrat,1,26,19,10,9,9,10,10,10,10,
+Richard Nixon,Nixon,Republican,1,23.9,19,10,11,11,10,10,10,10,"""Impeach this!"",""I am not a crook!"""
+Gerald R. Ford,Ford,Republican,1,26.2,19,10,9,9,10,10,10,10,
+Jimmy Carter,Carter,Democrat,1,22.4,19,10,12,12,10,10,10,10,
+Ronald Reagan,Reagan,Republican,1,24.2,19,10,11,12,10,10,10,10,"""I will tear down your face!"""
+George H. W. Bush,Bush,Republican,1,24.8,19,10,11,11,10,10,10,10,"""Thousand Points of my Knife!"""
+Bill Clinton,Clinton,Democrat,1,28.3,19,10,9,9,10,10,10,10,"""Super Sax Solo Attack!"""
+George W. Bush,Bush2,Republican,1,26,19,10,9,9,10,10,10,10,"""I'm the decider!"",""'Merica!"""
+Barack Obama,Obama,Democrat,1,23.4,19,10,11,11,10,10,10,10,"""How about some Obamacare"",""Obamacare covers stabbings."""
