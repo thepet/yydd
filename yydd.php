@@ -5,6 +5,7 @@
 	require_once('classes/Human.php');
 	require_once('classes/Fighter.php');
 	require_once('classes/Battle.php');
+	require_once('text/battle.php');
 	
 	if (isset($argv[1]))
 	{

@@ -25,7 +25,7 @@
 				$player = new $contestant;
 				$this->contestants[] = $player;
 
-				echo $player->getName() . " Entered the Arena! " . $player->health . "\n";
+				Text::display('enters_arena', $player->getName());
 			}
 			echo "\n";
 		}

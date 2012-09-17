@@ -139,34 +139,33 @@
 			if ($toHitRoll == 1)
 			{
 				//critical miss
-				echo $this->getName() . " tries to hit someone, not sure who. Because he whiffs so bad he trips...";
-				$damage = $this->rollDice(1, 4);
-				echo " for $damage damage.\n";
+				$damage = $this->roll(1, 4);
+				Text::display('miss_crit', $this->getName(), $battle->contestants[$target]->getName(), $damage);
 				$this->takeDamage($damage);
 				if (!$this->isAlive())
 				{
-					echo $this->getName() . " died.\n";
+					Text::display('died', $this->getName());
 				}
 				return;
 			} elseif ($toHitRoll >= $this->getCritChance()) {
 				//Critical hit!
-				echo $this->getName() . " SUPER MEGA stabs " . $battle->contestants[$target]->getName();
+				$text = 'stab_crit';
 				$damageMultiplyer = 2;
 			} elseif ($toHitRoll >= $toHit) {
 				//Hit!
-				echo $this->getName() . " stabs " . $battle->contestants[$target]->getName();
+				$text = 'stab_hit';
 			} else {
 				//miss :(
-				echo $this->getName() . " misses " . $battle->contestants[$target]->getName() . "\n";
+				Text::display('miss', $this->getName(), $battle->contestants[$target]->getName());
 				return;
 			}
 
 			$damage = $this->roll(1, 10, $this->getModifer('damage')) * $damageMultiplyer;
-			echo " for $damage damage.\n";
+			Text::display($text, $this->getName(), $battle->contestants[$target]->getName(), $damage);
 			$battle->contestants[$target]->takeDamage($damage);
 			if (!$battle->contestants[$target]->isAlive())
 			{
-				echo $battle->contestants[$target]->getName() . " died.\n";
+				Text::display('died', $battle->contestants[$target]->getName());
 			}
 		}
 
