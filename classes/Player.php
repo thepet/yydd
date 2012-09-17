@@ -111,10 +111,6 @@
 		{
 			if ($this->isAlive())
 			{
-				if($this->rollDice(1,20) >= 12)
-				{
-					$this->warCry();
-				}
 				$target = $this->findTarget($battle->contestants);
 				$this->attack($battle, $target);
 			}
@@ -138,6 +134,7 @@
 
 			if ($toHitRoll == 1)
 			{
+				$this->warCry();
 				//critical miss
 				$damage = $this->roll(1, 4);
 				Text::display('miss_crit', $this->getName(), $battle->contestants[$target]->getName(), $damage);
@@ -148,6 +145,7 @@
 				}
 				return;
 			} elseif ($toHitRoll >= $this->getCritChance()) {
+				$this->warCry();
 				//Critical hit!
 				$text = 'stab_crit';
 				$damageMultiplyer = 2;

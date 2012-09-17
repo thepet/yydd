@@ -5,7 +5,7 @@
 	require_once('classes/Human.php');
 	require_once('classes/Fighter.php');
 	require_once('classes/Battle.php');
-	require_once('text/battle.php');
+	require_once('classes/FBFriend.php');
 	
 	if(isset($argv[1]))
 	{
@@ -14,7 +14,7 @@
 		$seed = mt_rand(0, 2147483647);
 	}
 
-	$battle = 'presidents';
+	$battle = 'friends';
 
 	Random::init($seed);
 
