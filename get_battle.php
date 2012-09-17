@@ -1,46 +1,33 @@
 #!/usr/bin/php -q
 <?php
-	$dataCSV = fopen('battles/presidents/data.csv', 'r');
-	$headers = fgetcsv($dataCSV);
-
-	foreach($headers as $key => $header)
+	$csv_data = explode("\n",file_get_contents('https://docs.google.com/spreadsheet/pub?key=0AoepryCO01AzdDhKOVd1dzhQZGtXVGk5N1pwb1dtbkE&single=true&gid=0&output=csv'));
+	$headers = str_getcsv($csv_data[0]);
+	unset($csv_data[0]);
+	
+	$flip_headers = array_flip($headers);
+	
+	$contestants = array();
+	$contestants[] = "<?php\n";
+	foreach($csv_data as $raw_data)
 	{
-		$$header = $key;
-	}
-
-	$contestants = "<?php\n";
-	while($data = fgetcsv($dataCSV))
-	{
-		$contestants .= "
-	\$contestants[] = '$data[$phpClassName]';
-	class $data[$phpClassName] extends Fighter
-	{
-		var \$playerName = '$data[$playerName]';
-		var \$party = '$data[$party]';
-
-		var \$level = $data[$level];
-
-		var \$strength = $data[$strength];
-		var \$dexterity = $data[$dexterity];
-		var \$wisdom = $data[$wisdom];
-		var \$charisma = $data[$charisma];
-		var \$intelligence = $data[$intelligence];
-		var \$constitution = $data[$constitution];
-
-		var \$thac0 = $data[$thac0];
-		var \$ac = $data[$ac];
-";
-		if ($data[$warcries] != '')
+		$data = str_getcsv($raw_data);
+		$class_name = $data[$flip_headers['phpClassName']];
+		
+		$contestants[] = '$'."{$class_name} = new Fighter();";
+		foreach($headers as $key => $header)
 		{
-			$contestants .= "
-		var \$warcries = array($data[$warcries]);
-			";
+			if($header == 'phpClassName')
+				continue;
+				
+			if($header == 'warcries')
+				$contestants[] = '$'."{$class_name}->{$header} = array({$data[$key]});";
+			else
+				$contestants[] = '$'."{$class_name}->{$header} = '{$data[$key]}';";
 		}
-		$contestants .= "
+		$contestants[] = '$battle->contestants[] = $'.$class_name.";\n\n";
 	}
-";
-	}
-	$contestants .= "?>";
+	$contestants[] = "?>";
 
-	echo $contestants;
+	echo implode("\n", $contestants);
+	file_put_contents('battles/presidents/Contestants.php', implode("\n",$contestants));
 ?>
