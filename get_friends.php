@@ -1,6 +1,6 @@
 #!/usr/bin/php -q
 <?php
-	$access_token = $argv[1] != '' ? $argv[1] : 'AAAAAAITEghMBABW8qLwao3JGCFyrCwrKgx4jGxXiNxgio5u0ZBpd9hqC2rQHcIEEu6NRttPkmo1UYxw1EuigffdZBuMokptdNfXx849AZDZD' ;
+	$access_token = $argv[1] != '' ? $argv[1] : 'AAAAAAITEghMBAKaPFNSmU3DPOZCAUZCTxvHjkxhFol4hAF9ZCkp0YBTrV1BSYXLn5aCHc1VCyB8ZBs7M5svYGpanniXxtrFQv9v60fPDLm87uKa2gtYE';
 	
 	$friends = array();
 	$contestants = array();

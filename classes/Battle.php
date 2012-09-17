@@ -16,7 +16,7 @@
 			{
 				foreach($this->contestants as $contestant)
 				{
-					echo $contestant->getName() . " Entered the Arena! " . $contestant->health . "\n";
+					Text::display('enters_arena',$contestant->getName());
 				}
 			}
 			while(count($this->contestants) > 1)
